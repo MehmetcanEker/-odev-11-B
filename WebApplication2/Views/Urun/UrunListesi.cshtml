@@ -1,0 +1,32 @@
+﻿@model List<Urun>
+
+<table class="table">
+    <thead>
+        <tr>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Isım</th>
+                        <th>Aciklama</th>
+                        <th>Kategori</th>
+                        <th>Fiyat</th>
+                    </tr>
+                </thead>
+                <tr>
+                </tr>
+    </thead>
+    <tbody>
+
+        @foreach (Urun urunler in Model)
+        {
+            <tr>
+                <td>@urunler.Id</td>
+                <td>@urunler.Isım</td>
+                <td>@urunler.Aciklama</td>
+                <td>@urunler.Kategori</td>
+                <td>@urunler.Fiyat</td>
+            </tr>
+        }
+    </tbody>
+</table>
